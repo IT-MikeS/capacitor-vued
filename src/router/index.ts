@@ -1,6 +1,6 @@
-import Vue from 'vue'
-import VueRouter, { RouteConfig } from 'vue-router'
-import HomePage from '../views/Home.vue'
+import Vue from 'vue';
+import VueRouter, { RouteConfig } from 'vue-router';
+import HomePage from '../views/Home.vue';
 
 Vue.use(VueRouter)
 

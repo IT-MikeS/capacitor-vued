@@ -1,16 +1,2 @@
 # capacitor-vued
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
+I put this together just to make my life easier for scaffolding out applications with VueJS & Vuetify on Capacitor. Hopefully someone else will find this useful too!

@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+  <v-app>
     <loading-overlay/>
     <scanner-handle/>
     <router-view/>
-  </div>
+  </v-app>
 </template>
 
 <style lang="scss">

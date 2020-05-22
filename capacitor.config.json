@@ -1,0 +1,8 @@
+{
+    "appId": "com.itmikes.capacitorvued",
+    "appName": "Capacitor Vued",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "dist",
+    "cordova": {}
+}
