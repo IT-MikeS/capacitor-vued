@@ -8,14 +8,3 @@ export interface LoadingTask {
     uuid: string;
     taskName: string;
 }
-
-export interface ScannerResult {
-    source: string;
-    labelType: string;
-    dataDispatchTime: number;
-    dataString: string;
-}
-
-export interface ScannerHandleModuleState {
-    scannerResults: ScannerResult;
-}

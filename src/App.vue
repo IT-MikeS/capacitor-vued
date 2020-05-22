@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <loading-overlay/>
-    <scanner-handle/>
     <router-view/>
   </v-app>
 </template>
@@ -12,9 +11,8 @@
 <script>
   import {Vue, Component} from "vue-property-decorator";
   import LoadingOverlay from "@/components/LoadingOverlay";
-  import ScannerHandle from "@/components/ScannerHandle";
 
-  @Component({components: {ScannerHandle, LoadingOverlay}})
+  @Component({components: {LoadingOverlay}})
   export default class App extends Vue {
 
   }
