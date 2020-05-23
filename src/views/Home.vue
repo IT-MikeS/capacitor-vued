@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar color="blue accent-4">
+    <v-app-bar color="blue darken-1" dark>
       <v-toolbar-title>TITLE HERE</v-toolbar-title>
     </v-app-bar>
 
@@ -11,15 +11,14 @@
 </template>
 
 <script lang="ts">
-  import {Vue, Component, Watch} from "vue-property-decorator";
+  import {Vue, Component} from "vue-property-decorator";
   import {v4 as uuid4} from 'uuid';
   import {serverAddress} from '@/utils/consts';
-  import {ScannerResult} from "@/utils/interfaces";
   import { Plugins } from '@capacitor/core';
 
   @Component
   export default class HomePage extends Vue {
-    someData: any = null;
+    someData: string | null = null;
 
     mounted() {
       this.setupPage();
@@ -48,19 +47,6 @@
       } finally {
         await this.$store.commit('LoadingOverlay/finishLoadingTask', uuid);
       }
-    }
-
-
-    /////////////////////////
-    // Zebra Scanner Stuff //
-    ////////////////////////
-    get ScanData(): ScannerResult {
-      return this.$store.getters['ScannerHandler/getScannerResults'];
-    }
-    @Watch('ScanData')
-    onScanDataChange() {
-      console.log(`RAW SCAN: ${this.ScanData.dataString}: ${this.ScanData.labelType}`);
-
     }
   }
 </script>
