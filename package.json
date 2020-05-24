@@ -1,6 +1,6 @@
 {
   "name": "capacitor-vued",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -18,6 +18,7 @@
     "roboto-fontface": "*",
     "uuid": "^8.0.0",
     "vue": "^2.6.11",
+    "vue-capacitor": "^1.0.2",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.1",
     "vue-router": "^3.1.6",

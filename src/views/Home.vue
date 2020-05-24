@@ -14,7 +14,6 @@
   import {Vue, Component} from "vue-property-decorator";
   import {v4 as uuid4} from 'uuid';
   import {serverAddress} from '@/utils/consts';
-  import { Plugins } from '@capacitor/core';
 
   @Component
   export default class HomePage extends Vue {
@@ -25,8 +24,7 @@
     }
 
     async setupPage() {
-      const { SplashScreen } = Plugins;
-      await SplashScreen.hide();
+      await this.$capacitorPlugins.SplashScreen.hide();
       await this.loadSomeData();
     }
 
