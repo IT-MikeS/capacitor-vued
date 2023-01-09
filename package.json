@@ -14,7 +14,7 @@
     "@fortawesome/fontawesome-free": "^5.13.0",
     "core-js": "^3.6.4",
     "epic-spinners": "^1.1.0",
-    "luxon": "^1.24.1",
+    "luxon": "^1.28.1",
     "roboto-fontface": "*",
     "uuid": "^8.0.0",
     "vue": "^2.6.11",
